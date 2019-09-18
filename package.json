@@ -2,25 +2,12 @@
   "name": "task-planner-app",
   "version": "0.1.0",
   "private": true,
-  "engine":{
-    "npm": "5.7.1",
-    "node": "9.5.0"
-  }, 
-  
-  "devDependencies": {
-    "react-scripts": "latest"
-  },
-  
-  "description": "https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/autocomplete/IntegrationAutosuggest.js",
   "dependencies": {
     "@material-ui/core": "^4.4.2",
-    "autosuggest-highlight": "latest",
-    "lodash": "latest",
     "react": "^16.9.0",
-    "react-autosuggest": "latest",
     "react-dom": "^16.9.0",
-    "react-router": "^5.0.1",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,16 +18,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

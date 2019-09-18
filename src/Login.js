@@ -9,6 +9,7 @@ import './login.css';
 import granated from './granated';
 //import granated from './granated';
 //import Typography from '@material-ui/core/Typography';
+import Cual from './Cual';
 
 const useStyles = makeStyles(theme => ({
   link: {
@@ -38,7 +39,7 @@ export default function Login() {
 
         <h2>Ingrese los datos de inicio</h2>
         <TextField
-          id="outlined-email-input"
+          id="corre"
           label="Email"
           className={"login"}
           type="email"
@@ -48,7 +49,7 @@ export default function Login() {
           variant="outlined"
         />
         <TextField
-          id="outlined-password-input"
+          id="con"
           label="Password"
           className={"login"}
           type="password"
@@ -64,14 +65,17 @@ export default function Login() {
           <div>
             <ul>
               <li>
-                <Link to="/granated.js">Login</Link>
+                <Link to="/granated">Login</Link>
               </li>
               <li>
                 <Link to="/users">Create Acoount</Link>
               </li>
+              <li>
+                <Link to="/sumama">Perro</Link>
+              </li>
             </ul>
-            <Route exact path="/granated.js" component={granated.default} />
-            <Route path="/registro" component={granated.default} />
+            <Route exact path="/granated" component={granated} />
+            <Route exact path="/registro" component={granated} />
             
           </div>
         </Router>

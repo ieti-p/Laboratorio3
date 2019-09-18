@@ -15,9 +15,17 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-
+function datosUsuarios(props){
+  return(
+    <div id="hello">{props.mytext}</div>
+  )
+}
 export default function granated() {
 //function granated(){
+
+
+
+
 
   return (
 
@@ -25,16 +33,13 @@ export default function granated() {
 
       <header className="login-header" >
 
-        <h1>Ingerso exitoso</h1>
+        <h1>Ingerso exitoso<datosUsuarios mytext="Bienvenido pepito"/></h1>
+        <h2></h2>
 
-        <h2>Muerase</h2>
-        
-
-        
+        <h2>Ingreso exitoso <datosUsuarios mytext="Bienvenido pepito"/></h2>
       </header>
-
     </div>
-
+   
   );
 
 }

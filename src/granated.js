@@ -7,7 +7,8 @@ function datosUsuarios(props){
     <div id="hello">{props.mytext}</div>
   )
 }
-export default function granated() {
+//export default function granated() {
+  function granated() {
 
   return (
 
@@ -15,7 +16,7 @@ export default function granated() {
 
       <header className="login-header" >
 
-        <h1>Ingerso exitoso<datosUsuarios mytext="Bienvenido pepito"/></h1>      
+        <div>Ingreso exitoso<datosUsuarios mytext="Bienvenido pepito"/></div>      
         
       </header>
     </div>
@@ -23,3 +24,4 @@ export default function granated() {
   );
 
 }
+export default granated;

@@ -14,11 +14,8 @@ export default function Login() {
   return (
 
     <div className="login" text-justify="inter-word" >
-
       <header className="login-header" >
-
         <h1>Task Planner</h1>
-
         <h2>Ingrese los datos de inicio</h2>
         <TextField
           id="corre"

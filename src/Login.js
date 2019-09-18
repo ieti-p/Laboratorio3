@@ -1,17 +1,19 @@
 import React from 'react';
-import deburr from 'lodash/deburr';
-import Autosuggest from 'react-autosuggest';
-import match from 'autosuggest-highlight/match';
-import parse from 'autosuggest-highlight/parse';
+
 import TextField from '@material-ui/core/TextField';
-import Paper from '@material-ui/core/Paper';
-import MenuItem from '@material-ui/core/MenuItem';
-import Popper from '@material-ui/core/Popper';
+import { BrowserRouter as Router, Link, Route, Redirect, withRouter } from 'react-router-dom';
+
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+//import Button from '@material-ui/core/Button';
 import './login.css';
-//npm install autosuggest-highlight --save
+import granated from './granated';
+//import granated from './granated';
+//import Typography from '@material-ui/core/Typography';
+
 const useStyles = makeStyles(theme => ({
+  link: {
+    margin: theme.spacing(1),
+  },
   button: {
     margin: theme.spacing(1),
   },
@@ -24,6 +26,8 @@ const useStyles = makeStyles(theme => ({
 export default function Login() {
 
   const classes = useStyles();
+
+
   return (
 
     <div className="login" text-justify="inter-word" >
@@ -53,14 +57,24 @@ export default function Login() {
           variant="outlined"
 
         />
-        <div>
-          <Button variant="outlined" color="secondary" className={classes.button}>
-            Loggin
-      </Button>
-          <Button variant="outlined" color="secondary" className={classes.button}>
-            Create Acount
-      </Button>
-        </div>
+
+
+
+        <Router>
+          <div>
+            <ul>
+              <li>
+                <Link to="/granated.js">Login</Link>
+              </li>
+              <li>
+                <Link to="/users">Create Acoount</Link>
+              </li>
+            </ul>
+            <Route exact path="/granated.js" component={granated.default} />
+            <Route path="/registro" component={granated.default} />
+            
+          </div>
+        </Router>
       </header>
 
     </div>

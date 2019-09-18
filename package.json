@@ -5,6 +5,10 @@
   "devDependencies": {
     "react-scripts": "latest"
   },
+  "engines": {
+    "npm": "5.7.1",
+    "node": "9.5.0"
+  },
   "description": "https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/autocomplete/IntegrationAutosuggest.js",
   "dependencies": {
     "@material-ui/core": "^4.4.2",

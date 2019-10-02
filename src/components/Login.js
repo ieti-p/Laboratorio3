@@ -30,14 +30,14 @@ export class Login extends Component {
         console.log("password " + this.state.password);
         this.setState({ isUserLoggedIn: true });
     }
-
     render() {
 
         if (this.state.isUserLoggedIn) {
             return <Redirect to={{
                 pathname: '/home',
-                state: { username: this.state.username }
+                state: { username: this.state.username }           
             }}
+
             />
         }
 
